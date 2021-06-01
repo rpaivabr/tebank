@@ -19,6 +19,12 @@
     }
   },
   "projects": {
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    },
     "app": {
       "tags": []
     },
@@ -26,10 +32,14 @@
       "tags": [],
       "implicitDependencies": ["app"]
     },
-    "api": {
+    "site": {
       "tags": []
     },
-    "api-interfaces": {
+    "site-e2e": {
+      "tags": [],
+      "implicitDependencies": ["site"]
+    },
+    "custom-ui": {
       "tags": []
     }
   }

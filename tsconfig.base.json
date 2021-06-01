@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tebank/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@tebank/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@tebank/custom-ui": ["libs/custom-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

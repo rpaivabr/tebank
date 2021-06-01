@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@tebank/api-interfaces';
 
 @Component({
   selector: 'tebank-root',
@@ -8,6 +6,13 @@ import { Message } from '@tebank/api-interfaces';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  title = 'app';
+
+  handleClick(event: unknown) {
+    console.log(event)
+  }
+
+  handleInput(event: unknown) {
+    console.log(event)
+  }
 }
