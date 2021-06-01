@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     --color-primary: #0d6efd;
     --color-secondary: #6c757d;
@@ -8,7 +14,26 @@ html {
     --color-info: #0dcaf0;
     --color-light: #f8f9fa;
     --color-dark: #212529;
+    --color-background: #F5F8FF;
     --font-color-light: #fff;
     --font-color-dark: #212529;
     --font-color-link: #0d6efd;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+main {
+    height: calc(100vh - 160px);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

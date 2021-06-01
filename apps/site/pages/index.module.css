@@ -1,2 +1,11 @@
-.page {
+.cover {
+    height: 100%;
+}
+
+.subtitle {
+    position: absolute;
+    top: 800px;
+    right: 200px;
+    color: #fff;
+    font-size: 48px;
 }

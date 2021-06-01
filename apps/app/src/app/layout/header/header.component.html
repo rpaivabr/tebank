@@ -1,0 +1,9 @@
+<header>
+    <div class="container">
+        <te-logo></te-logo>
+        <nav class="nav" *ngIf="token$ | async">
+            <p>Ag: 0001 C/C: 0000001-2</p>
+            <a href="#" (click)="logout($event)">Sair</a>
+        </nav>
+    </div>
+</header>

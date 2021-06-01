@@ -1,9 +1,13 @@
 import { Injectable } from '@nestjs/common';
-import { Message } from '@tebank/api-interfaces';
+import { LoginResponse, Message } from '@tebank/api-interfaces';
 
 @Injectable()
 export class AppService {
   getData(): Message {
     return { message: 'Welcome to api!' };
+  }
+
+  login(): LoginResponse {
+    return { token: 'abcd1234' };
   }
 }

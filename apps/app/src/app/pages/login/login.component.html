@@ -1,0 +1,7 @@
+<div class="container">
+    <form [formGroup]="loginForm">
+        <input type="email" name="email" placeholder="email" formControlName="email" />
+        <input type="password" name="password" placeholder="password" formControlName="password" />
+        <te-button color="success" (myclick)="handleClick()">Login</te-button>
+    </form>    
+</div>

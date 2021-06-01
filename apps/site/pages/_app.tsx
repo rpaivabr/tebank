@@ -1,30 +1,12 @@
 import React, { useEffect } from 'react';
-import { AppProps } from 'next/app';
-import Head from 'next/head';
-import { ReactComponent as NxLogo } from '../public/nx-logo-white.svg';
 import './styles.css';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import('@tebank/custom-ui')
   })
 
-  return (
-    <>
-      <Head>
-        <title>Welcome to site!</title>
-      </Head>
-      <div className="app">
-        <header className="flex">
-          <NxLogo width="75" height="50" />
-          <h1>Welcome to site!</h1>
-        </header>
-        <main>
-          <Component {...pageProps} />
-        </main>
-      </div>
-    </>
-  );
+  return <Component {...pageProps} />
 }
 
-export default CustomApp;
+export default MyApp;
